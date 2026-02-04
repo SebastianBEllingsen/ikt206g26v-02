@@ -26,6 +26,8 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ClassLibraryProject/ShowCase
+
     - name: Test
       run: dotnet test --no-build --verbosity normal
       working-directory: ClassLibraryProject/ShowCase
